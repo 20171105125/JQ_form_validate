@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/normalize/8.0.1/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="warp warp-sm">
+    <header class="header">
+      <h1>
+        AHahaha
+      </h1>
+    </header>
+    <div class="form">
+      <form action="" id="signup">
+        <div class="input-warp">
+          <label for="">姓名</label>
+          <input data-rule='maxlength:5|minlength:2'
+          type="text" name="name" value="" class="input-control">
+          <div id='name-input-error' class="input-error">姓名格式有误</div>
+        </div>
+        <div class="input-warp">
+          <label for="">用户名</label>
+          <input data-rule='pattern:"^[a-z0-9]*$"|maxlength:8|minlength:4'
+          type="text" name="usermane" value="" class="input-control">
+          <div id='usermane-input-error' class="input-error">用户名格式有误</div>
+        </div>
+        <div class="input-warp">
+          <label for="">年龄</label>
+          <input data-rule='min:18'
+          type="text" name="age" value="" class="input-control">
+          <div id='age-input-error' class="input-error">年龄格式有误</div>
+        </div>
+        <div class="input-warp">
+          <label for="">自我介绍</label>
+          <input data-rule='required:false|maxlength:64'
+          type="text" name="intro" value="" class="input-control">
+          <div id='intro-input-error' class="input-error">自我介绍格式有误</div>
+        </div>
+        <div class="input-warp">
+          <label for="">密码</label>
+          <input data-rule='maxlength:64|minlength:12'
+          type="password" name="password" value="" class="input-control">
+          <div id='password-input-error' class="input-error">密码格式有误</div>
+        </div>
+        <button type="submit" name="button">注册</button>
+      </form>
+    </div>
+  </div>
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+<script src="js/validator.js"></script>
+<script src="js/input.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
